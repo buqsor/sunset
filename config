@@ -33,7 +33,7 @@ command1="?&user=your_user&password=your_password&cmnd=Power%20on"
 url1="http://ip_of_device_here/cm"
 
 # Command to swith the Sonoff device off
-command2="?&user=admin&password=Remote1342&cmnd=Power%20off"
+command2="?&user=admin&password=your_password&cmnd=Power%20off"
 # Url of the Sonoff device
 url2="http://ip_of_device_here/cm"
 
