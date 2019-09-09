@@ -1,0 +1,40 @@
+# Configuration file for the sunset environment
+
+# What sunrise time to use when the online resource is not available.
+fb_sunrise="09:00"
+
+# What sunset time to use when the online resource is not available.
+fb_sunset="18:00"
+
+# Log file. We need it for sending the status over email. 
+file="/home/pi/sunset/log/sunset.log"
+
+# Create current timestamp for logging.
+now=$(date +'%d-%m-%Y %H:%M:%S')
+
+# E-mail: reciepent for the logfile
+email="some@email.com"
+
+# E-mail: what reply address to use
+email_r="some@email.com"
+
+# First obtain a location code from: https://weather.codes/search/
+# Weather location Amsterdam Holland
+location="NLXX0002"
+
+#-----------------SONOFF----------------
+
+# Sonoff Device Controlling the security light in the garden
+# Example url: http://ip_of_device_here/cm?&user=your_user&password=your_password&cmnd=Power%20on
+
+# Command to swith the Sonoff device on
+command1="?&user=your_user&password=your_password&cmnd=Power%20on"
+# Url of the Sonoff device 
+url1="http://ip_of_device_here/cm"
+
+# Command to swith the Sonoff device off
+command2="?&user=admin&password=Remote1342&cmnd=Power%20off"
+# Url of the Sonoff device
+url2="http://ip_of_device_here/cm"
+
+#---------------------------------------
